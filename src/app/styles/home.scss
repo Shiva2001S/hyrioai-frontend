@@ -1,13 +1,17 @@
-.item{
+.item {
     justify-content: space-evenly;
-    p, input, button {
+
+    p,
+    input,
+    button {
         margin: 20px;
     }
+
     background-color: orange;
     width: 20%;
 }
 
-.frm{
+.frm {
     margin: 10px;
     display: flex;
     flex-direction: row;
@@ -16,20 +20,39 @@
     height: 40px;
 }
 
-.frmpar{
+.frm>* {
+    margin-left: 20px;
+    /* Replace 10px with the desired margin */
+    margin-right: 20px;
+    /* Replace 10px with the desired margin */
+}
+
+.frmpar {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-evenly;
+    margin: 20px;
+    margin-bottom: 80px;
+}
+
+body {
     background-color: blueviolet;
 }
 
-body{
-    background-color: blueviolet;
-}
-
-.desc{
+.desc {
     width: 500px;
     height: 100px;
 }
 
-.btn{
+.btn {
     background-color: blue;
     width: 80px;
+    font-weight: bold;
+}
+.logout{
+    height: 40px;
+    margin-top: 10px;
+    background-color: red;
+    font-weight: bold;
 }

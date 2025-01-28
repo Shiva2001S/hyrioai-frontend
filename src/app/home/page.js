@@ -1,9 +1,10 @@
 'use client';
 import axios from 'axios';
-import { getCookie } from 'cookies-next';
+import { getCookie, deleteCookie } from 'cookies-next';
 import React, { useEffect, useState } from 'react'
 import Item from '../components/Item';
 import '../styles/home.scss';
+import { redirect } from 'next/navigation';
 
 const page = () => {
   const [arr, setArr] = useState([]);
@@ -32,6 +33,10 @@ const page = () => {
   const handleExp = (e) => {
     setExp(e.target.value);
   }
+  const handleLogout = () => {
+    deleteCookie('hyrio');
+    return redirect('/login');
+  }
   return (
     <div>
       <div className='frmpar'>
@@ -47,13 +52,13 @@ const page = () => {
           <input type='date' onChange={e => { setDat(e.target.value) }} value={dat} />
           <button className='btn' type='submit'>Post Job</button>
         </form>
-        {arr.length > 0 ?
+        <button className='logout' onClick={handleLogout}>LogOut</button>
+      </div>
+      {arr.length > 0 ?
         arr.map((i) => (
           <Item key={i._id} job={i.job} desc={i.desc} exp={i.exp} dat={i.dat} senderMail={i.email} />
         )) : ""
       }
-      </div>
-
     </div>
   )
 }
