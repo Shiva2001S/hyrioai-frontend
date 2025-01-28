@@ -1,0 +1,35 @@
+.item{
+    justify-content: space-evenly;
+    p, input, button {
+        margin: 20px;
+    }
+    background-color: orange;
+    width: 20%;
+}
+
+.frm{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    // background-color: blueviolet;
+    height: 40px;
+}
+
+.frmpar{
+    background-color: blueviolet;
+}
+
+body{
+    background-color: blueviolet;
+}
+
+.desc{
+    width: 500px;
+    height: 100px;
+}
+
+.btn{
+    background-color: blue;
+    width: 80px;
+}

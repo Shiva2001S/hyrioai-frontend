@@ -1,0 +1,39 @@
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(73, 199, 249);
+    position: absolute;
+    height: 5%;
+    width: 100%;
+    form {
+        input {
+            margin: 10px;
+        }
+        button{
+            background-color: blue;
+            width: 120px;
+        }
+    }
+}
+
+body {
+    background-color: orange;
+}
+
+.otp{
+    // background-color: red;
+    height: 20px;
+    margin: 10px;
+}
+
+.btn1{
+    height: 20px;
+    width: 80px;
+    // color: red;
+    margin: 10px;
+    background-color: rgb(47, 1, 249);
+}
+.login{
+    margin: 10px;
+}

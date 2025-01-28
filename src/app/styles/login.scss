@@ -1,0 +1,29 @@
+.first{
+    display: flex;
+    flex-direction: row;
+    background-color: purple;
+    input, button {
+        margin: 100px;
+    }
+    input{
+        width: 190px;
+        height: 40px;
+    }
+    button {
+        // color: rgb(244, 121, 121);
+        background-color: rgb(140, 140, 233);
+        width: 80px;
+        height: 40px;
+    }
+}
+
+.second{
+    margin: 100px;
+    float: right;
+    color: red;
+    background-color: rgb(79, 79, 248);
+}
+
+body {
+    background-color: orange;
+}
